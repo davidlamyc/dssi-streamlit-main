@@ -15,7 +15,7 @@ loaded_model = pickle.load(open(filename, 'rb'))
 
 # Use the loaded model for prediction
 new_data = np.array([[height_input]])
-prediction = loaded_model.predict(new_data)
+prediction = loaded_model.predict(new_data)[0]
 print(prediction)
 
 # Display the inputs
